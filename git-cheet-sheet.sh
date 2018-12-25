@@ -23,7 +23,7 @@ $ git diff head                                               # show difference 
 $ git diff head -- ./test                                     # compare with the tip of the current branch, but limit the comparison to the file "test".
 
 $ git commit -m 'message'                                     # commit the staged snapshot with message
-$ git commit --amend [-m 'message']                           #replace the last commit with the staged changes and last commit combined. use with nothing staged to edit the last commit¡¯s message
+$ git commit --amend [-m 'message']                           #replace the last commit with the staged changes and last commit combined. use with nothing staged to edit the last commitÂ¡Â¯s message
 $ git commit -am 'message'                                    # commit all tracked files to repo
 $ git commit --allow-empty                                    # perform a commit with an empty message
 
@@ -85,7 +85,7 @@ $ git tag -a <tag>                                            # create annotated
 $ git tag -a <tag> [commit] [-m <message>]                    # create annotated tag  
 $ git tag -d <tag>                                            # remove a tag from a local repo
 
-                                                              # remove local tags that already not exist in remote
+# remove local tags that already not exist in remote
 $ git tag -l | xargs git tag -d 
 $ git fetch origin -p 
 
@@ -104,9 +104,9 @@ $ git remote prune origin                                     # deleting the ref
 $ git pull [<remote> <branch>]                                # fetches and merge a specific <branch>, from the remote 
 $ git push <remote> <branch>                                  # push current branch to the specified remote
 $ git push -u <remote> <branch>                               # creates an upstream tracking connection and is especially useful when publishing a local branch on a remote for the first time.
-$ git push <remote> --force                                   # forces the$ git push even if it results in a non-fast-forward merge. do not use the --force flag unless you¡¯re absolutely sure you know what you¡¯re doing
+$ git push <remote> --force                                   # forces the$ git push even if it results in a non-fast-forward merge. do not use the --force flag unless youÂ¡Â¯re absolutely sure you know what youÂ¡Â¯re doing
 $ git push <remote> --all                                     # push all of your local branches to the specified remote
-$ git push <remote> --tags                                    # tags aren¡¯t automatically pushed when you push a branch or use the --all flag. the --tags flag sends all of your local tags to the remote repo
+$ git push <remote> --tags                                    # tags arenÂ¡Â¯t automatically pushed when you push a branch or use the --all flag. the --tags flag sends all of your local tags to the remote repo
 $ git push <remote> --delete <branch|tag>                     # delete branch or tag from remote
 $ git push <remote> :<branch/tag>                             # delete branch or tag from remote
 
@@ -117,6 +117,6 @@ $ git clean -f -d -x                                          # same as above bu
 
 $ git blame <file>                                            # list the change dates and authors for a file
 
-                                                              # check for errors and cleanup repository
+# check for errors and cleanup repository
 $ git fsck
 $ git gc --p
