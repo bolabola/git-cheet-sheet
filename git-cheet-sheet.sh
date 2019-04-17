@@ -80,7 +80,7 @@ $ git stash drop                                              # deletes the last
 $ git stash clear                                             # clear the stash
 
 $ git tag                                                     # show existing tag
-$ git tag <tag> [commit]                                      # create a lightweight tag .add 'commit' to tag a specific commit instead of current one.
+$ git tag <tag> [commit] [-f]                                 # tag a specific commit instead of current one,'-f' replace the tag if exists.
 $ git tag -a <tag>                                            # create annotated tag  
 $ git tag -a <tag> [commit] [-m <message>]                    # create annotated tag  
 $ git tag -d <tag>                                            # remove a tag from a local repo
